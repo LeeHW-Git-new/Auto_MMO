@@ -17,9 +17,9 @@ public class TitleScene : BaseScene
 	}
 
 	void StartLoadAssets()
-	{
-		Managers.Resource.LoadAllAsync<Object>("PreLoad", (key, count, totalCount) =>
-		{
+    {
+        Managers.Resource.LoadAllAsync<Object>("PreLoad", (key, count, totalCount) =>
+        {
 			Debug.Log($"{key} {count}/{totalCount}");
 
 			if (count == totalCount)
@@ -27,7 +27,7 @@ public class TitleScene : BaseScene
 				//Managers.Data.Init();
 			}
 		});
-	}
+    }
 
 	public override void Clear()
 	{

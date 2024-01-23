@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class Managers : MonoBehaviour
 {
-    private static Managers s_instance;
-    private static Managers Instance { get { Init(); return s_instance; } }
+	private static Managers s_instance;
+	private static Managers Instance { get { Init(); return s_instance; } }
+
+	#region Contents
+	private GameManager _game = new GameManager();
+	private ObjectManager _object = new ObjectManager();
+
+	public static GameManager Game { get { return Instance?._game; } }
+	public static ObjectManager Object { get { return Instance?._object; } }
+	#endregion
 
 	#region Core
 	private DataManager _data = new DataManager();
@@ -23,6 +31,7 @@ public class Managers : MonoBehaviour
 	public static UIManager UI { get { return Instance?._ui; } }
 	#endregion
 
+
 	public static void Init()
 	{
 		if (s_instance == null)
@@ -36,8 +45,9 @@ public class Managers : MonoBehaviour
 
 			DontDestroyOnLoad(go);
 
-			// �ʱ�ȭ
+			// 초기화
 			s_instance = go.GetComponent<Managers>();
 		}
 	}
+
 }

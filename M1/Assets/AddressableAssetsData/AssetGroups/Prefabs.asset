@@ -15,17 +15,41 @@ MonoBehaviour:
   m_GroupName: Prefabs
   m_Data:
     m_SerializedData: []
-  m_GUID: ab3f0a0de3383f14882e0a9aedcbe376
+  m_GUID: 8b6f37a6951c9e246bb403b67ba11597
   m_SerializeEntries:
-  - m_GUID: 41cd55ead3023e940a07d418094c1d5f
-    m_Address: hero
+  - m_GUID: 3a5e4b1bc5f22d243af02ab5bdf4d607
+    m_Address: Hero
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a40e413d750cdb44b0fe888fbf55284
+    m_Address: BaseMap
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45823a6326f3b8c4ead9fbe0893db3be
+    m_Address: Monster
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec721a68e8c259149b0cb5799ad2e2b8
+    m_Address: Env
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f47c398c87ed2e841acfd50260b3a10a
+    m_Address: HeroCamp
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: 3474109d79fa6e14ca175e08616d3ac4, type: 2}
+  m_Settings: {fileID: 11400000, guid: 3b34cd1d0f58d714b8b4fcf9c86bdbb4, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 4cda15982bb678d489f13ce555320a31, type: 2}
-    - {fileID: 11400000, guid: 3968d3e927991444ca2b055684b11665, type: 2}
+    - {fileID: 11400000, guid: 63561a52627407d4985d6ab0ec2fd74e, type: 2}
+    - {fileID: 11400000, guid: 82f54451240552c49ba14195654ec706, type: 2}
